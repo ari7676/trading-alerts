@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: trading-alerts
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars: []
